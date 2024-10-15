@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey to help us improve our service.</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="number" id="number-label">Age:</label>
+      <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="120" required>
+    </div>
+    <div class="form-group">
+      <label for="dropdown">Select your occupation:</label>
+      <select id="dropdown" name="occupation" required>
+        <option value="">Choose one...</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+        <option value="retired">Retired</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="female">Female</label>
+        <label><input type="radio" name="gender" value="other">Other</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Select your interests:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interests" value="sports">Sports</label>
+        <label><input type="checkbox" name="interests" value="music">Music</label>
+        <label><input type="checkbox" name="interests" value="movies">Movies</label>
+        <label><input type="checkbox" name="interests" value="books">Books</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="comments">Additional Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+    </div>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
